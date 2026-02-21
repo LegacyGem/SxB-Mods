@@ -1,0 +1,10 @@
+{
+  "name"         : "sxb_node_conversion_core",
+  "friendlyName" : "Gem - SxB Node Conversion Core",
+  "version"      : "0.1.2",
+  "author"       : "LegacyGem",
+  "description"  : "Core node-conversion layer for SxB: seduction status, node watcher hooks, and node behavior patches.",
+  "link"         : "",
+  "requires"     : ["lox_sexbound"]
+}
+

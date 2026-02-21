@@ -1,0 +1,6 @@
+{
+  "name": "seduction_mind_control",
+  "blockingStat": "sexboundImmunity",
+  "defaultDuration": 1,
+  "scripts": [ "seduction_mind_control.lua" ]
+}
