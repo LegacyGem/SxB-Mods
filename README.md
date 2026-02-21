@@ -1,22 +1,160 @@
-SxB NPC addon patch, whatever you call it be.
-To Experience the whole thing, it's required to have all three mod and one optional mod to work it out
-Villager Conversion is not required or optional in this case, as it's for people who needed it only.
+# Gem – SxB NPC Conversion Suite
 
-To quickly download it
-Required for the NPC overhaul to work are this 3 mods :
+A modular NPC conversion framework built on top of **Sexbound (SxB)**.
 
-https://github.com/LegacyGem/SxB-Mods/releases/download/NPCs/Gem-SxB_Better_Conversion.pak
+Implements a structured lifecycle:
 
-https://github.com/LegacyGem/SxB-Mods/releases/download/NPCs/Gem-SxB_More_NPC.pak
+Seduction → Node → Pregnancy → Mother → Afterbirth → Child
 
-https://github.com/LegacyGem/SxB-Mods/releases/download/NPCs/Gem-SxB_Node_Conversion_Core.pak
+Each module has a strictly separated responsibility.
 
+---
 
-Optional, where it can upgrade your Aphrodite Bow to make the node works
+# Module Architecture
 
-https://github.com/LegacyGem/SxB-Mods/releases/download/NPCs/Gem-SxB_Upgraded_Aphrodite_Bow.pak
+| Module | Role |
+|--------|------|
+| Node Conversion Core | Engine |
+| Better Conversion | Conversion policy / rules |
+| More NPC | Custom NPC types & dialog |
+| Upgraded Aphrodite Bow | Weapon integration (optional) |
 
-Another Optional Settings you can do is
-On SxB Defeat [https://www.loverslab.com/files/file/9344-sexbound-defeat/], you should config it don't die on pregnancy
+---
 
-Anyway, have fun I guess
+# 1. Gem – SxB Node Conversion Core  
+**(Engine Layer – Required)**
+
+Core backend for seduction and node mechanics.
+
+Provides:
+
+- `seduction_mind_control` status effect  
+- `seduction_watcher.lua` world watcher  
+- `sexbound_main_node*.patch` hooks  
+- Node override script  
+
+This module:
+- Handles seduction application
+- Hooks into node lifecycle
+- Triggers conversion pipeline
+- Contains no custom NPC types
+- Contains no weapon items
+
+Refactored from the old MindControl package into a clean engine-only module.
+
+---
+
+# 2. Gem – SxB Better Conversion  
+**(Policy Layer – Required)**
+
+Defines what happens after node interaction ends.
+
+### Flow
+
+1. Waits for node release / break  
+2. Checks pregnancy state  
+3. If pregnancy detected (player father required by config):
+
+hostile/friendly → `motherexhostilevillager`
+
+4. After birth:
+
+`motherexhostilevillager` → `afterbirthvillager`
+
+### Design Intent
+
+- Prevent premature conversion
+- Preserve identity, equipment, and state during type swap
+- Enforce pregnancy-based rule logic
+
+### Config
+
+`betterconversion.config`
+
+Allows rule adjustments (father requirement, behavior flags, etc.)
+
+---
+
+# 3. Gem – SxB More NPC  
+**(Content Layer – Required)**
+
+Provides custom NPC types and dialog behavior used by the system.
+
+NPC Types:
+
+- `motherexhostilevillager`
+- `afterbirthvillager`
+- `childrenvillager`
+
+Includes:
+
+- Dialog configs for:
+  - Mother
+  - Afterbirth
+  - Child
+- Baby plugin override to ensure SxB child output follows `childrenvillager` pipeline
+
+This module supplies the actors used by the conversion system.
+
+---
+
+# 4. Gem – SxB Upgraded Aphrodite Bow  
+**(Integration Layer – Optional)**
+
+Integrates Aphrodite Bow into the conversion engine.
+
+Changes:
+
+- `imbuedaphroditesbow` fires seduction mind-control arrow IDs
+- Adds `fertilityaphroditesbow`
+  - Applies hyper fertility
+  - Triggers mind-control pipeline
+- Adds recipe + blueprint patch
+- Cleans arrow naming to `seduction...` variants
+
+Optional. Not required for core functionality.
+
+---
+
+# Full Conversion Lifecycle
+
+Seduction Applied  
+↓  
+Node Interaction  
+↓  
+Node Released / Broken  
+↓  
+Better Conversion Policy Check  
+↓  
+Pregnant?  
+- No → Restore original type  
+- Yes → Convert to `motherexhostilevillager`  
+  ↓  
+ Birth  
+  ↓  
+ Convert to `afterbirthvillager`  
+  ↓  
+ Child uses `childrenvillager` flow  
+
+---
+
+# Requirements
+
+- Sexbound framework  
+- `lox_sexbound`
+
+Villager Conversion mod is not required.
+
+---
+
+# Installation
+
+Place required `.pak` files in:
+
+Starbound/mods/
+
+---
+
+# Credits
+
+Sexbound framework by **Erina**
