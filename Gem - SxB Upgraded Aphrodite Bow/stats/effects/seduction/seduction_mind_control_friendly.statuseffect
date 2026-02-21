@@ -1,0 +1,5 @@
+{
+  "name": "seduction_mind_control_friendly",
+  "defaultDuration": 1,
+  "scripts": [ "/stats/effects/seduction/seduction_mind_control.lua" ]
+}

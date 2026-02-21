@@ -1,0 +1,9 @@
+{
+  "name" : "more_sxb_npc",
+  "friendlyName" : "Gem - SxB More NPC",
+  "version" : "0.3.0",
+  "author" : "LegacyGem",
+  "description" : "Adds custom SxB-themed NPC types/dialogue and forces player-parent SxB babies to spawn as childrenvillager for kid-stage to adult villager flow.",
+  "link" : ""
+}
+

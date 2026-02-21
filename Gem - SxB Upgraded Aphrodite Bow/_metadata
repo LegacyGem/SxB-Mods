@@ -1,0 +1,11 @@
+{
+  "name"         : "sxb_upgraded_aphrodites_bow",
+  "friendlyName" : "Gem - SxB Upgraded Aphrodite Bow",
+  "version"      : "0.1.0",
+  "author"       : "LegacyGem",
+  "description"  : "Upgrades Aphrodite's Bow to use SxB MindControl node conversion and adds a fertility upgrade variant.",
+  "link"         : "",
+  "requires"     : ["Lox_AphroditesBow", "sxb_node_conversion_core"]
+}
+
+

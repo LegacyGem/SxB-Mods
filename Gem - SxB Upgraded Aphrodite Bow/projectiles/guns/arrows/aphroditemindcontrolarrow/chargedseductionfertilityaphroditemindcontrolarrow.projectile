@@ -1,0 +1,25 @@
+{
+  "projectileName" : "chargedseductionfertilityaphroditemindcontrolarrow",
+  "physics" : "arrow",
+  "actionOnCollide" : [
+    { "action" : "sound", "options" : ["/sfx/aphrodite/beeps.ogg"] }
+  ],
+  "actionOnReap" : [
+    { "action" : "config", "file" : "/projectiles/explosions/aphroditepheromones/aphroditepheromones.config" }
+  ],
+  "image" : "chargedaphroditemindcontrolarrow.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 2,
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 1,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "pointLight" : false,
+  "power" : 0,
+  "knockback" : 0,
+  "knockbackDirectional" : false,
+  "damageKind" : "hidden",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "statusEffects" : ["sexbound_custom_hyper_fertility", "seduction_mind_control_friendly"]
+}
+
+

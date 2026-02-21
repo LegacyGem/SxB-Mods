@@ -1,0 +1,9 @@
+{
+  "name" : "gem_change_villager_offer",
+  "friendlyName" : "Gem - Change Villager Offer",
+  "version" : "0.1.0",
+  "author" : "LegacyGem",
+  "description" : "Adds hand-crafted offers (1 pixel) to convert friendly NPCs into villager and guard NPC types via Job Offers.",
+  "includes" : [ "joboffers" ],
+  "link" : ""
+}

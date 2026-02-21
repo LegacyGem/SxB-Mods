@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/scripts",
+    "value": [
+      "/npcs/bmain.lua",
+      "/scripts/gem/sxb_npc_conversion.lua",
+      "/npcs/bookofspirits_interact.lua"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/displayTitleAsName",
+    "value": false
+  }
+]
+

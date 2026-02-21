@@ -1,0 +1,17 @@
+{
+  "input" : [
+    { "item" : "imbuedaphroditesbow", "count" : 1 },
+    { "item" : "lox_hyperfertilitypill", "count" : 1 },
+    { "item" : "money", "count" : 5000 }
+  ],
+  "output" : {
+    "item" : "fertilityaphroditesbow",
+    "count" : 1
+  },
+  "groups" : [
+    "craftingtable",
+    "plain",
+    "weapons",
+    "all"
+  ]
+}

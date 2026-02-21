@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "gemofferVillager",
+    "count" : 1
+  },
+  "groups" : [ "plain", "mod", "all" ]
+}

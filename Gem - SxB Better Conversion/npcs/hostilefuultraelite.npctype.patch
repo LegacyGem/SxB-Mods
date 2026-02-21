@@ -1,0 +1,12 @@
+[
+  {
+    "op" : "add",
+    "path" : "/scripts",
+    "value" : [
+      "/npcs/bmain.lua",
+      "/scripts/recruitable.lua",
+      "/scripts/sexbound/override/npc.lua",
+      "/scripts/gem/sxb_npc_conversion.lua"
+    ]
+  }
+]

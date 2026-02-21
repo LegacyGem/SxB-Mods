@@ -1,0 +1,15 @@
+{
+  "itemName" : "gemofferVillageGuard",
+  "price" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "tool",
+  "description" : "Convert a friendly NPC into a Village Guard.",
+  "shortdescription" : "Gem Offer: Village Guard",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+  "inventoryIcon" : "/items/active/unsorted/joboffers/joboffer.png",
+  "scripts" : ["/items/active/unsorted/gemoffers/gem_change_villager_offer.lua"],
+  "offerType" : "villageguard"
+}
+

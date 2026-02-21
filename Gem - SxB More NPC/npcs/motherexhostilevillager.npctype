@@ -1,0 +1,16 @@
+{
+  "type" : "motherexhostilevillager",
+  "baseType" : "villager",
+  "damageTeamType" : "friendly",
+  "displayTitle" : "Mother of Children",
+  "displayTitleAsName" : false,
+  "scriptConfig" : {
+    "dialog" : {
+      "greeting" : "/dialog/motherexhostilevillager.config:greeting",
+      "converse" : "/dialog/motherexhostilevillager.config:converse",
+      "hail" : "/dialog/motherexhostilevillager.config:hail"
+    }
+  }
+}
+
+

@@ -1,0 +1,28 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/primaryAbility/projectileType",
+    "value" : "seductionaphroditemindcontrolarrow"
+  },
+  {
+    "op" : "replace",
+    "path" : "/primaryAbility/powerProjectileType",
+    "value" : "chargedseductionaphroditemindcontrolarrow"
+  },
+  {
+    "op" : "replace",
+    "path" : "/altAbility/projectileType",
+    "value" : "seductionaphroditemindcontrolarrow"
+  },
+  {
+    "op" : "replace",
+    "path" : "/altAbility/powerProjectileType",
+    "value" : "chargedseductionaphroditemindcontrolarrow"
+  },
+  {
+    "op" : "replace",
+    "path" : "/description",
+    "value" : "Arrows now seduce targets into Sexbound nodes using MindControl flow."
+  }
+]
+

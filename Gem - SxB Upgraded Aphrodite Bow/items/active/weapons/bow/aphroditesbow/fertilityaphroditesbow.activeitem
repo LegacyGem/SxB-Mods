@@ -1,0 +1,55 @@
+{
+  "itemName" : "fertilityaphroditesbow",
+  "price" : 7500,
+  "inventoryIcon" : "aphroditesbowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "Mind-controls targets into nodes and applies hyper fertility.",
+  "shortdescription" : "Aphrodite's Fertility Bow",
+  "twoHanded" : true,
+  "itemTags" : ["sexbound", "aphrodite", "weapon", "ranged", "bow"],
+
+  "level" : 1,
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "aphroditesbowfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : { "offset" : [0, 0] }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "energyPerShot" : 20,
+    "projectileType" : "seductionfertilityaphroditemindcontrolarrow",
+    "powerProjectileType" : "chargedseductionfertilityaphroditemindcontrolarrow",
+    "projectileParameters" : {
+      "speed" : 100,
+      "power" : 0
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "energyPerShot" : 20,
+    "projectileType" : "seductionfertilityaphroditemindcontrolarrow",
+    "powerProjectileType" : "chargedseductionfertilityaphroditemindcontrolarrow",
+    "projectileParameters" : {
+      "speed" : 100,
+      "power" : 0
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}
+

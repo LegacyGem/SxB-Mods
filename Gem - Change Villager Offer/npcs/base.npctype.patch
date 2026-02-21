@@ -1,0 +1,7 @@
+[
+  {
+    "op" : "add",
+    "path" : "/scripts/-",
+    "value" : "/scripts/gem/gem_change_villager_offer_npc.lua"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name"         : "gem_sxb_npc_conversion",
+  "friendlyName" : "Gem - SxB Better Conversion",
+  "version"      : "0.3.0",
+  "author"       : "LegacyGem",
+  "description"  : "Converts pregnant friendly hostiles to motherexhostilevillager, then to afterbirthvillager after birth, while preserving identity/equipment.",
+  "link"         : "",
+  "requires"     : ["lox_sexbound", "sxb_node_conversion_core", "more_sxb_npc"]
+}
+
+
+

@@ -1,0 +1,15 @@
+{
+  "itemName" : "gemofferVillageGuardCaptain",
+  "price" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "tool",
+  "description" : "Convert a friendly NPC into a Village Guard Captain.",
+  "shortdescription" : "Gem Offer: Guard Captain",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+  "inventoryIcon" : "/items/active/unsorted/joboffers/joboffer.png",
+  "scripts" : ["/items/active/unsorted/gemoffers/gem_change_villager_offer.lua"],
+  "offerType" : "villageguardcaptain"
+}
+

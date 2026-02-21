@@ -1,0 +1,22 @@
+{
+  "type" : "childrenvillager",
+  "baseType" : "villager",
+  "damageTeamType" : "friendly",
+  "displayTitle" : "Children Villager",
+  "scriptConfig" : {
+    "dialog" : {
+      "kid" : "/dialog/childrenvillager_child.config:kid",
+      "family" : {
+        "default" : "/dialog/childrenvillager_adult.config:default",
+        "greeting" : "/dialog/childrenvillager_adult.config:greeting",
+        "converse" : "/dialog/childrenvillager_adult.config:converse",
+        "kid" : "/dialog/childrenvillager_child.config:kid"
+      },
+      "default" : "/dialog/childrenvillager_adult.config:default",
+      "greeting" : "/dialog/childrenvillager_adult.config:greeting",
+      "converse" : "/dialog/childrenvillager_adult.config:converse",
+      "hail" : "/dialog/childrenvillager_adult.config:hail"
+    }
+  }
+}
+

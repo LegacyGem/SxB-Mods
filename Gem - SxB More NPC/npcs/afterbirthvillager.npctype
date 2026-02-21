@@ -1,0 +1,14 @@
+{
+  "type" : "afterbirthvillager",
+  "baseType" : "villager",
+  "damageTeamType" : "friendly",
+  "displayTitle" : "Afterbirth Villager",
+  "scriptConfig" : {
+    "dialog" : {
+      "greeting" : "/dialog/afterbirthvillager.config:greeting",
+      "converse" : "/dialog/afterbirthvillager.config:converse",
+      "hail" : "/dialog/afterbirthvillager.config:hail"
+    }
+  }
+}
+
